@@ -12,8 +12,8 @@ defaultMixerSettings = {
     CTFCapLimit = 7,
 
     -- Vehicles
-    ServerSettings.ShrikeLimit = 1
-    ServerSettings.BeowulfLimit = 0
+    ShrikeLimit = 1,
+    BeowulfLimit = 0,
     
     -- Inventory call-in
     EnableInventoryCallIn = true,

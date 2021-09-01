@@ -38,7 +38,7 @@ require("admin")
 
 local roles = {
     {
-    -   name     = "admin",
+        name     = "admin",
         password = "###", -- <<< Set the password! 
         commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
         canLua   = true, -- Admin can execute arbitrary Lua!

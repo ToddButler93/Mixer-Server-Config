@@ -1,6 +1,7 @@
 local vehicleDef = {
     properties = {
         
+    },
 }
 
 local vehicleWeaponsDef = {
