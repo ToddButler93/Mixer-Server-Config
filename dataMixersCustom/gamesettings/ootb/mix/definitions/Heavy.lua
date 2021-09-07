@@ -2,6 +2,7 @@ local classDef = {
     ootbClass="Heavy",
     armorClass="Heavy",
     weapons={
+        -- Brute
         "Heavy Spinfusor",
         "Devastator Spinfusor",
         "Gladiator",
@@ -10,22 +11,50 @@ local classDef = {
         "Nova Colt",
         "Plasma Cannon",
         "EFG",
+        -- Juggernaut
+        "Fusion Mortar",
+        "Fusion Mortar Deluxe",
+        "MIRV Launcher",
+        "Spinfusor MKD",
+        "Spinfusor MK-X",
+        "Heavy Twinfusor",
+        "X1 LMG",
+        -- Doombringer
+        "Chain Gun",
+        "Chain Cannon",
+        "Heavy Bolt Launcher",
+        "Saber Launcher",
+        "Titan Launcher",
+        {class="Medium", name="Dust Devil"},
         {class="Light", name="Shocklance"},
-        {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
+        -- Brute
         "Fractal Grenade",
         "Extended Fractal",
         "Light Sticky Grenade",
+        -- Juggernaut
+        "Heavy AP Grenade",
+        "Heavy AP-XL",
+        "Spinfusor Disk",
+        -- Doombringer
+        "Frag Grenade",
+        "Mines",
     },
     packs={
         "Heavy Shield Pack",
         "Heavy Energy Pack",
         "Survival Pack",
+        "Regen Pack",
+        "Forcefield",
     },
     skins={
         "Brute",
         "Crusher",
+        "Juggernaut",
+        "The Forlorn",
+        "Doombringer",
+        "Executioner",
     },
     properties={
 
@@ -53,6 +82,17 @@ local itemDefs = {
         name="Heavy Bolt Launcher", 
         changes={
             Damage = 800,
+        },
+    },
+    {
+        class="Medium",
+        name="Dust Devil", 
+        changes={
+            Damage = 500,
+            StuckDamageMultiplier = 1,
+            StuckMomentumMultiplier = 1,
+            ExplosiveRadius = 410,
+            SpareAmmo = 39,
         },
     },
 }

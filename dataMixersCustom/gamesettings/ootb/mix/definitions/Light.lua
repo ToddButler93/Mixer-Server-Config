@@ -2,22 +2,51 @@ local classDef = {
     ootbClass="Light",
     armorClass="Light",
     weapons={
+        -- Pathfinder
         "Light Spinfusor",
         "Bolt Launcher",
         "Blinksfusor",
         "Light Twinfusor",
         "Dueling Spinfusor",
-        -- "Light Grenade Launcher",
         "Light Assault Rifle",
         "Shotgun",
         "Holdout Shotgun",
+        -- Infiltrator
+        "Stealth Spinfusor",
+        "Jackal",
+        "Rhino SMG",
+        "Arctic Rhino SMG",
+        "SN7 Pistol",
+        "Arctic SN7 Pistol",
+        "Throwing Knives",
+        -- Sentinel
+        "BXT1",
+        "BXT1A",
+        "Phase Rifle",
+        "SAP20",
+        {class="Medium", name="Nova Blaster"},
+        {class="Heavy", name="Nova Blaster MX"},
+        "Falcon",
+        "Accurized Shotgun",
+        -- Other
+        "Light Grenade Launcher",
+        "Sparrow",
         {class="Light", name="Shocklance"},
-        {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
+        -- Pathfinder
         "Impact Nitron",
         "Explosive Nitron",
         "Compact Nitron",
+        -- Infiltrator
+        "Sticky Grenades",
+        "Sticky Grenades XL",
+        "Prism Mines",
+        "Chaff Grenades",
+        -- Sentinel
+        "T5 Grenades",
+        "Claymore Mines",
+        "Motion Mines",
     },
     packs={
         "Thrust Pack",
@@ -27,10 +56,16 @@ local classDef = {
         -- Light Utility pack is being converted
         -- into a 'Lightweight pack'
         "Light Utility Pack",
+        "Stealth Pack",
     },
     skins={
         "Pathfinder",
         "Freerunner",
+        "Infiltrator",
+        "Mercenary",
+        "Assassin",
+        "Sentinel",
+        "Specter",
     },
     properties={
         
@@ -44,140 +79,56 @@ local itemDefs = {
     {
         name="Light Spinfusor", 
         changes={
-            Damage = 550,
-            DirectHitMultiplier = 1.4,
-            SpareAmmo = 28,
-            ReloadTime = 1.24,
+            
         },
     },
     {
         name="Dueling Spinfusor", 
         changes={
-            Damage = 550,
-            DirectHitMultiplier = 1.6,
-            SpareAmmo = 28,
-            ReloadTime = 1.24,
-            ExplosiveRadius = 340,
+            
         },
     },
     {
         name="Blinksfusor", 
         changes={
-            Damage = 550,
-            DirectHitMultiplier = 1.6,
-            SpareAmmo = 28,
-            ReloadTime = 1.24,
+            
         },
     },
     {
         name="Light Twinfusor", 
         changes={
-            Damage = 380,
-            ExplosiveRadius = 360,
-            DirectHitMultiplier = 1.4,
-            SpareAmmo = 36,
-            ImpactMomentum = 85000,
-            SelfImpactMomentumMultiplier = 0.5,
-            SelfImpactExtraZMomentum = 45000,
-            ReloadTime = 1.4,
+            
         },
     },
     {
         name="Bolt Launcher", 
         changes={
-            Damage = 650,
-            DirectHitMultiplier = 1.35,
-            SpareAmmo = 28,
-        },
-    },
-    {
-        name="Light Assault Rifle", 
-        changes={
-            Damage = 80,
-            ClipAmmo = 24,
-            SpareAmmo = 204,
-            ReloadTime = 1.53,
-            FireInterval = 0.1,
-        },
-    },
-    {
-        name="Shotgun", 
-        changes={
-            Damage = 80,
-            ShotgunShotCount = 8,
-            ClipAmmo = 6,
-            SpareAmmo = 50,
-            HitscanRange = 3000,
-            Accuracy = 0.85,
-            AccuracyLossMax = 0.3,
-            AccuracyLossOnShot = 0.0,
-            AccuracyCorrectionRate = 0.18,
-            ShotgunUseGOTYSpread = true,
-        },
-    },
-    {
-        name="Holdout Shotgun", 
-        changes={
-            Damage = 85,
-            ShotgunShotCount = 8,
-            ClipAmmo = 5,
-            SpareAmmo = 46,
-            HitscanRange = 3000,
-            Accuracy = 0.85,
-            AccuracyLossMax = 0.3,
-            AccuracyLossOnShot = 0.0,
-            AccuracyCorrectionRate = 0.18,
-            ShotgunUseGOTYSpread = true,
+            
         },
     },
     {
         name="Impact Nitron", 
         changes={
-            Damage=300,
-            ExplosiveRadius=506,
-            DirectHitMultiplier=1,
-            SpareAmmo=3,
+            
         },
     },
     {
         name="Explosive Nitron", 
         changes={
-            Damage=650,
-            ExplosiveRadius=396,
-            DirectHitMultiplier=1,
-            SpareAmmo=3,
+            
         },
     },
     {
         name="Compact Nitron", 
         changes={
-            Damage=300,
-            ExplosiveRadius=440,
-            DirectHitMultiplier=1,
-            SpareAmmo=4,
-        },
-    },
-    {
-        name="Light Energy Pack", 
-        valueMods={
-            EnergyRegenRateBuff=0.18
-        },
-    },
-    {
-        -- Converted into a 'lightweight pack'
-        name="Light Utility Pack", 
-        valueMods={
-            EnergyBuff=25,
-            MassBuff=-0.3
+            
         },
     },
     {
         -- Converted into a 'lightweight pack'
         name="Shocklance", 
         changes={
-            Damage = 700,
-            HitscanRange = 500,
-            ShotEnergyCost = 10,
+            Damage = 500,
         },
     },
 }

@@ -2,6 +2,9 @@ local utils = require("mix/utils")
 
 local function applyCustomClass(className, class)
     local classDef = class.class
+    utils:addClass(className, classDef.ootbClass, classDef.armorClass,
+                   classDef.weapons, classDef.beltItems, classDef.packs,
+                   classDef.skins)
     Classes.setValueMods(classDef.armorClass, utils:valueModsListDefConverter(classDef.armorValueMods))
     for propName, propVal in pairs(classDef.properties) do
         Classes.setProperty(classDef.armorClass, Classes.Properties[propName], propVal)
@@ -39,7 +42,7 @@ local classNames = {
 local classes = {}
 
 -- Disable Custom Classes
-ServerSettings.CustomClasses.Enabled = false
+ServerSettings.CustomClasses.Enabled = true
 
 -- Load class definitions
 for idx, className in pairs(classNames) do
